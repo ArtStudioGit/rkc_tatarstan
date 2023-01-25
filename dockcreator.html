@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Пример создания документа в новом окне</title>
+	</head>
+	<body>
+		<button onclick = "myFunc()">Нажми меня</button> <!-- добавляем атрибут событий onclick -->
+		<script>
+	function myFunc() {
+	  let newWindow = window.open(), // метод позволяет открыть новое окно браузера
+	      newWindowDocument = newWindow.document; // ссылаемся на объект document в новом открытом окне
+	  // открываем поток для записи документа
+	  newWindowDocument.open("text/html", "replace"); 
+	  // используем метод write
+	  newWindowDocument.write("<html><head><title>My document</title></head><body>");
+	  newWindowDocument.write("<h1>Hello</h1>");
+	  newWindowDocument.write("<pre>");
+	  newWindowDocument.write("1");
+	  newWindowDocument.write("2");
+	  newWindowDocument.write("3<br>");
+	  // используем метод writeln
+	  newWindowDocument.writeln("1");
+	  newWindowDocument.writeln("2");
+	  newWindowDocument.writeln("3");
+	  // используем метод write
+	  newWindowDocument.write("</pre>");
+	  newWindowDocument.write("</body></html>");
+	  // закрываем поток 
+	  newWindowDocument.close(); 
+	}
+		</script>
+	</body>
+</html>
