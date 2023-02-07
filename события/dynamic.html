@@ -1,0 +1,23 @@
+<script>
+
+var win1
+
+text = prompt("Текст для отображения");
+
+function W() {
+
+win1 = window.open("", "Window", "resizable=1, width=800, height=800");
+
+win1.document.open();
+
+win1.document.write(`<h1>${text}</h1>`);
+
+win1.document.writeln("</html>");
+
+window.focus();
+
+}
+
+</script>
+
+<body onload="W();"/>
