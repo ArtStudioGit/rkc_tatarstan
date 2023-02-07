@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /xn--90aoqlh7c4a/
+Disallow: /xn--80aaomqb4ao0g/
