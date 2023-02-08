@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial;">
+<div style="text-align: center;">
+<h2>
+Итак, есть три способа добавления статей на сайт:<br>
+<br>
+Первый, самый простой: Статьи добавлять буду я. <br>
+<br>
+Второй, уже посложнее: Загрузить сайт в редактор и регулярно оплачивать его нахождение там а также поностью сменить уже имеющийся хостинг. Минусы это способа в том,<br> что во первых это платно, во вторых есть не все виды контента и если с остальными способами вы можете сделать что угодно,<br> то с этим у вас строго ограниченный фунционал,<br> и к тому же скорее всего сайт будет некорректно отображаться. Плюс к тому еще надо найти этот конструктор,<br> потому что Tilda и Wordpress не позволяют загружать сайты.<br>
+<br>
+Третий, самый сложный: Вы можете добавлять статьи сами, но это требует некоторого понимания этого языка. Ниже приведена инструкция к третьему способу.<br>
+<br>
+</h2>
+<h2 style="font-weight: bold;">
+И так, как добавлять статьи третьим способом:<br>
+</h2>
+<h3>
+Для добавления новой статьи откройте (на компьютере или в браузере через github.com) файл<br>https://github.com/ArtStudioGit/rkc_tatarstan/tree/main/события/index.html<br>
+И листайте до строки номер 328.<br>
+Вы должны увидеть:<br>
+</h3>
+</div>
+<div style="width: 50%; margin: 0 auto;">
+<h4>
+<xmp>
+  <div class="postGridItem">
+    <div class="postGridImageOverlay" style="background-image:url(ссылка)"></div>
+    
+    <div class="postGridContent">
+      
+            <div class="postGridTitle">Статья 1</div>
+      	
+      
+            <div class="postGridDescription">Описание статьи</div>
+            
+      	     <a href="./station1.html" class="postGridButton">Кнопка</a> 
+      	
+
+    </div>
+    
+  </div>
+  
+</xmp>
+</h4>
+</div>
+<div style="text-align: center;">
+<h3>
+Для создания нового события скопируйте этот блок и вставьте его в конец перед строкой<br>
+</h3>
+</div>
+<div style="width: 50%; margin: 0 auto;">
+<h4>
+<xmp>
+
+			<!-- end Square Post Grid Image Overlay -->		</div>
+			
+</xmp>
+</h4>
+</div>
+<div style="text-align: center;">
+<h3>	
+Обьясняю как и что изменить:<br>
+</h3>
+<div style="width: 50%; margin: 0 auto;">
+<h4>
+<xmp>
+
+    <div class="postGridImageOverlay" style="background-image:url(ссылка)"></div>
+
+</xmp>
+</h4>
+</div>
+<div style="text-align: center;">
+<h3>
+Вместо ссылки вставьте ссылку на изображение для отображения в кнопке.<br>
+
+Также можно загрузить его на https://github.com/ArtStudioGit/rkc_tatarstan/tree/main/события<br>чтобы в случае удаления его из сети оно осталось на сайте.<br>
+</h3>
+</div>
+<div style="width: 50%; margin: 0 auto;">
+<h4>
+<xmp>
+
+           <div class="postGridTitle">Статья 1</div>
+
+</xmp>
+</h4>	
+</div>	   
+<div style="text-align: center;">
+<h3>
+Вместо Статья 1 Пишем название.<br>
+</h3>
+</div>
+<div style="width: 50%; margin: 0 auto;">
+<h4>
+<xmp>
+
+           <div class="postGridDescription">Описание статьи</div>
+
+</xmp>
+</h4>
+</div>
+<div style="text-align: center;">
+<h3>		   
+Вместо Описание статьи Пишем описание.<br>
+</h3>
+</div>
+<div style="width: 50%; margin: 0 auto;">
+<h4>
+<xmp>
+
+            <a href="./station1.html" class="postGridButton">Кнопка</a> 
+
+</xmp>
+</h4>
+</div>
+<div style="text-align: center;">
+<h3>		
+Вместо Кнопка Пишем то что будет написано на кнопке(Например перейти или читать).<br>
+Вместо ./station1.html Пишем номер статьи: например если это статья номер шесть то ./station6.html<br>
+Файлы статей есть до шести как и кнопок но их можно скопировать и переименовать например в station7.html<br>
+Тогда вы получите еще одну статью.<br>
+
+
+
+А теперь про то как писать статьи:<br>
+
+Заходите на https://github.com/ArtStudioGit/rkc_tatarstan/tree/main/события/"Тут номер статьи(Например station1.html)" и листаете до строки номер 246.<br>
+
+Вы увидете что-то вроде <xmp><p>Текст</p></xmp><br>
+Для изменения текста просто изменяете текст.<br>
+А теперь про теги и операции с текстом:<br>
+Перенос строки: <xmp><br></xmp><br>
+Неразрывный пробел(Используется чтобы сделать пробел но слово не переносилось на другую строку): <xmp>&nbsp;</xmp><br>
+</h3>
+<h1><xmp><h1></xmp></h1><h1>Огромный текст<h1><xmp></h1></xmp></h1></h1>
+<br>
+<h2><xmp><h2></xmp></h2><h2>Текст поменьше<h2><xmp><h2></xmp></h2></h2>
+<br>
+<h3><xmp><h3></xmp></h3><h3>Текст еще поменьше<h3><xmp><h3></xmp></h3></h3>
+<br>
+<h4><xmp><h4></xmp></h4><h4>Текст маленький<h4><xmp><h4></xmp></h4></h4>
+<br>
+<h5><xmp><h5></xmp></h5><h5>Текст совсем маленький<h5><xmp><h5></xmp></h5></h5>
+<br>
+<h6><xmp><h6></xmp></h6><h6>Текст совсем совсем маленький<h6><xmp><h6></xmp></h6></h6>
+<br>
+<h4>
+Ссылка делается так:<br>
+
+<xmp><a href="./">Ссылка</a></xmp><br>
+<a href="./">Ссылка</a>
+<br>
+<br>
+
+Вместо ссылки поставлено ./ чтобы страница обновлялась а не переходила куда то.<br>
+Для открытия в новой вкладке надо сделать:<br>
+
+<xmp><a href="./" target="_blank">Ссылка</a></xmp><br>
+<a href="./" target="_blank">Ссылка</a><br>
+
+</h4>
+
+<h3>Для того чтобы сделать текст</h3> <h3 style="font-weight: bold; color: red;">жирным или цветным</h3>
+<h3>Надо использовать<xmp><h3 style="font-weight: bold; color: red;">жирным или цветным</h3></xmp><br>font-weight: bold; color: red; <br> color: red; Цвет на английском или html код цвета<br>font-weight: bold; Особые отличия текста<br><br>Ставить все это нужно между кавычками в <xmp><h1 style="">Текст</h1></xmp></h3>
+
+<h3>Чтобы изменить картинку в статье листаете до строки номер 275.<br>Вы должны увидеть 
+<xmp><div class="fg-item fg-type-image fg-idle"><figure class="fg-item-inner"><a href="ссылка" data-attachment-id="924" 
+class="fg-thumb"><span class="fg-image-wrap"><img decoding="async" width="800" height="600" </xmp>
+Вместо <xmp><a href="ссылка"></xmp> вставляете ссылку на изображение<br>в полях widht="800" height="600" Пишете его размер.
+</h3>
+<br>
+<br>
+<br>
+<h2>Все остальное также можно найти в интернете.</h2>
+<br>
+<br>
+<br>
+<h2>
+Для лучшего понимания рекомендую посмотреть исходный код этой инструкции <a href="https://github.com/ArtStudioGit/rkc_tatarstan/tree/main/instruction.html/" target="_blank">ИСХОДНЫЙ КОД</a>
+</h2>
+</div>
+</body>
+</html>
